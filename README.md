@@ -31,14 +31,15 @@ Data Sources → Azure Data Factory → Databricks → Synapse Analytics → Pow
 
 ## Project Structure
 ```
+github_files/
 ├── databricks/
-│   ├── 00_setup.py
+│   ├── 00_setup.py          (key replaced with placeholder)
 │   ├── 01_redfin_pipeline.py
-│   ├── 02_census_data.py
+│   ├── 02_census_data.py    (key replaced with placeholder)
 │   ├── 03_bls_data.py
 │   └── 04_combine_rankings.py
 ├── synapse/
-│   ├── 01_setup_database.sql
+│   ├── 01_setup.sql         (password replaced with placeholder)
 │   ├── 02_price_ranges_by_property_type.sql
 │   ├── 03_extreme_prices_analysis.sql
 │   ├── 04_top_10_expensive_cities.sql
@@ -46,9 +47,10 @@ Data Sources → Azure Data Factory → Databricks → Synapse Analytics → Pow
 │   ├── 06_deal_score_hot_markets.sql
 │   ├── 07_best_investment_cities.sql
 │   └── 08_ultimate_city_ranking.sql
-├── powerbi/
-│   └── DFW_RealEstate_Dashboard.pbix
-└── README.md
+├── adf/
+│   └── adf_pipeline.json
+└── powerbi/
+    └── DFW_RealEstate_Dashboard.pbix
 ```
 
 ## Data Pipeline
